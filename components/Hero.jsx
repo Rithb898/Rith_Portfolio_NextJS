@@ -161,7 +161,7 @@ function Hero() {
             {/* Right Column - Terminl */}
             <div className='w-full lg:w-1/2'>
               <Terminal>
-                <TypingAnimation className='text-xl'>
+                <TypingAnimation className='md:text-xl'>
                   &gt; npm fetch-my-details@latest
                 </TypingAnimation>
 
@@ -173,7 +173,7 @@ function Hero() {
                   <span>✔ User found: Rith</span>
                 </AnimatedSpan>
 
-                <TypingAnimation className='text-xl' delay={3000}>
+                <TypingAnimation className='md:text-xl' delay={3000}>
                   &gt; whoami
                 </TypingAnimation>
 
@@ -181,31 +181,31 @@ function Hero() {
                   <span>Rith Banerjee</span>
                 </AnimatedSpan>
 
-                <TypingAnimation delay={4000} className='text-xl'>
+                <TypingAnimation delay={4000} className='md:text-xl'>
                   &gt; echo "Passionate about Web Development"
                 </TypingAnimation>
 
-                <AnimatedSpan delay={6500} className='text-green-500 text-xl'>
+                <AnimatedSpan delay={6500} className='text-green-500 md:text-xl'>
                   <span>Passionate about Web Development</span>
                 </AnimatedSpan>
 
-                <TypingAnimation delay={7000} className='text-xl'>
+                <TypingAnimation delay={7000} className='md:text-xl'>
                   &gt; skills --list
                 </TypingAnimation>
 
-                <AnimatedSpan delay={7500} className='text-blue-500 text-xl'>
+                <AnimatedSpan delay={7500} className='text-blue-500 md:text-xl'>
                   <span>- Next.js, React, Tailwind CSS</span>
                 </AnimatedSpan>
 
-                <AnimatedSpan delay={8000} className='text-blue-500 text-xl'>
+                <AnimatedSpan delay={8000} className='text-blue-500 md:text-xl'>
                   <span>- TypeScript, Node.js, Express</span>
                 </AnimatedSpan>
 
-                <TypingAnimation delay={8500} className='text-xl'>
+                <TypingAnimation delay={8500} className='md:text-xl'>
                   &gt; echo "Let's build something amazing!"
                 </TypingAnimation>
 
-                <AnimatedSpan delay={9000} className='text-green-500 text-xl'>
+                <AnimatedSpan delay={9000} className='text-green-500 md:text-xl'>
                   <span>Let's build something amazing!</span>
                 </AnimatedSpan>
               </Terminal>
