@@ -46,6 +46,7 @@ function Hero() {
     "Linux & GitHub for DevOps Enthusiast",
     "Learning MARN Stack",
   ];
+
   return (
     <>
       <main className='pt-20 lg:pt-[0rem] bg-[#020617] text-white min-h-screen'>
@@ -185,7 +186,10 @@ function Hero() {
                   &gt; echo "Passionate about Web Development"
                 </TypingAnimation>
 
-                <AnimatedSpan delay={6500} className='text-green-500 md:text-xl'>
+                <AnimatedSpan
+                  delay={6500}
+                  className='text-green-500 md:text-xl'
+                >
                   <span>Passionate about Web Development</span>
                 </AnimatedSpan>
 
@@ -205,7 +209,10 @@ function Hero() {
                   &gt; echo "Let's build something amazing!"
                 </TypingAnimation>
 
-                <AnimatedSpan delay={9000} className='text-green-500 md:text-xl'>
+                <AnimatedSpan
+                  delay={9000}
+                  className='text-green-500 md:text-xl'
+                >
                   <span>Let's build something amazing!</span>
                 </AnimatedSpan>
               </Terminal>
