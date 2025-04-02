@@ -5,6 +5,8 @@ import React from "react";
 import { SparklesText } from "./magicui/sparkles-text";
 import { FlipWords } from "./ui/flip-words";
 import { AnimatedSpan, Terminal, TypingAnimation } from "./magicui/terminal";
+// import { Meteors } from "./magicui/meteors";
+import { Meteors } from "./ui/meteors";
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {
@@ -53,11 +55,11 @@ function Hero() {
         <section className='hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8'>
           <div className='absolute inset-0'></div>
 
-          <GridBackground />
+          {/* <GridBackground /> */}
 
           {/* Meteors Effect */}
           <div className='absolute inset-0 overflow-hidden pointer-events-none'>
-            {/* <Meteors number={30} /> */}
+            <Meteors number={30}/>
           </div>
 
           {/* Main content container */}
@@ -197,20 +199,20 @@ function Hero() {
                   &gt; skills --list
                 </TypingAnimation>
 
-                <AnimatedSpan delay={7500} className='text-blue-500 md:text-xl'>
+                <AnimatedSpan delay={8000} className='text-blue-500 md:text-xl'>
                   <span>- Next.js, React, Tailwind CSS</span>
                 </AnimatedSpan>
 
-                <AnimatedSpan delay={8000} className='text-blue-500 md:text-xl'>
+                <AnimatedSpan delay={8500} className='text-blue-500 md:text-xl'>
                   <span>- TypeScript, Node.js, Express</span>
                 </AnimatedSpan>
 
-                <TypingAnimation delay={8500} className='md:text-xl'>
+                <TypingAnimation delay={9000} className='md:text-xl'>
                   &gt; echo "Let's build something amazing!"
                 </TypingAnimation>
 
                 <AnimatedSpan
-                  delay={9000}
+                  delay={11500}
                   className='text-green-500 md:text-xl'
                 >
                   <span>Let's build something amazing!</span>
