@@ -6,6 +6,9 @@ import {
   FaReact,
   FaGitAlt,
   FaFigma,
+  FaPython,
+  FaAws,
+  FaLinux
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -15,10 +18,24 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  SiAppwrite,
+  SiSupabase,
+  SiNetlify,
 } from "react-icons/si";
+
 import { TbBrandVscode } from "react-icons/tb";
 import { MdAnimation } from "react-icons/md";
 import IconCloudDemo from "./ui/globe";
+
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaCss3Alt, FaNodeJs  } from "react-icons/fa";
+import { TiHtml5 } from "react-icons/ti";
+import { SiExpress } from "react-icons/si";
+
+import reactIcon from "@/public/react.svg"
+// import SkillCard from "./SkillCard";
+
+
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
   <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -53,35 +70,62 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       icon: Code2,
+      title: "Programming Languages",
+      color: "text-blue-400",
+      skills: [
+        { name: "JavaScript", icon: <IoLogoJavascript className="w-4 h-4 text-[#f7df1e]" /> },
+        { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
+      ],
+    },
+    {
+      icon: Code2,
       title: "Frontend Development",
       color: "text-blue-400",
       skills: [
-        { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
+        { name: "React", icon: <FaReact className="w-4 h-4 text-[#61dbfb]" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4 text-white" /> },
-        { name: "TypeScript", icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" /> },
-        { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
+        { name: "CSS", icon: <FaCss3Alt className="w-4 h-4 text-[#2d53e7]" /> },
+        { name: "HTML", icon: <TiHtml5 className="w-4 h-4 text-[#e5532d]" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4 text-[#08bbd9]" /> },
+      ],
+    },
+    {
+      icon: Code2,
+      title: "Backend Development",
+      color: "text-blue-400",
+      skills: [
+        { name: "NodeJS", icon: <FaNodeJs className="w-4 h-4 text-[#6ba269]" /> },
+        { name: "Express", icon: <SiExpress className="w-4 h-4 text-[#f7e025]" /> },
+      ],
+    },
+    {
+      icon: Code2,
+      title: "Devops/Developement",
+      color: "text-blue-400",
+      skills: [
+        { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#ff9c08]" /> },
+        { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#61DAFB]" /> },
+        { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#61DAFB]" /> },
+        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
+        { name: "Netlify", icon: <SiNetlify className="w-4 h-4 text-[#61DAFB]" /> },
+      ],
+    },
+    {
+      icon: Code2,
+      title: "Backend as a Service(BaaS)",
+      color: "text-blue-400",
+      skills: [
+        { name: "Appwrite", icon: <SiAppwrite className="w-4 h-4 text-[#61DAFB]" /> },
+        { name: "Supabase", icon: <SiSupabase className="w-4 h-4 text-[#61DAFB]" /> },
       ],
     },
     {
       icon: Layout,
-      title: "UI/UX & Deployment",
+      title: "UI/UX",
       color: "text-purple-400",
       skills: [
         { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        { name: "Firebase", icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" /> },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
-        { name: "Git & GitHub", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
-      ],
-    },
-    {
-      icon: Paintbrush,
-      title: "Creative & Animation",
-      color: "text-yellow-400",
-      skills: [
         { name: "Framer Motion", icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" /> },
-        { name: "UI Animation", icon: <MdAnimation className="w-4 h-4 text-[#00C853]" /> },
       ],
     },
   ];

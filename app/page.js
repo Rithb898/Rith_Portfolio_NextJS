@@ -1,3 +1,4 @@
+import Contact from '@/components/Contact'
 import EducationSection from '@/components/EducationSection'
 import Hero from '@/components/Hero'
 import Projects from '@/components/Projects'
@@ -12,6 +13,7 @@ function page() {
       <SkillsSection />
       <EducationSection />
       <Projects />
+      <Contact />
     </>
   )
 }
