@@ -1,7 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
+import { PostHogProvider } from "@/components/PostHogProvider";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -17,15 +17,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
-
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
+        <link
+          rel="stylesheet"
+          type='text/css'
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
       </head>
-      <body
-        className={`${montserrat.variable} font-montserrat antialiased`}
-      >
+      <body className={`${montserrat.variable} font-montserrat antialiased`}>
         <Navbar />
-        {children}
+        <PostHogProvider>
+          {children}
+        </PostHogProvider>
       </body>
     </html>
   );
