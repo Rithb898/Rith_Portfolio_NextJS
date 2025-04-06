@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rith's Portfolio
+
+A modern portfolio website built with Next.js, showcasing my projects and skills as a developer.
+
+## Technologies Used
+
+- Next.js 14
+- React 19
+- Tailwind CSS
+- React Icons
+- Font Optimization with next/font
+- PostHog Analytics
+- Responsive Design
+
+## Features
+
+- Modern and Clean UI
+- Project Showcase
+- Skills Section
+- Contact Information
+- Optimized Performance
+- Mobile Responsive
+- Analytics Integration
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone https://github.com/rithb898/Rith_Portfolio_NextJS.git
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+Rith_Portfolio_NextJS/
+├── app/                # Next.js app directory (routes & layouts)
+├── components/         # Reusable React components
+├── constant/          # Constants and configuration
+├── lib/              # Utility functions and helpers
+├── public/           # Static assets (images, fonts)
+├── sections/         # Page sections and layouts
+└── ...
+```
 
-## Learn More
+## Configuration Files
 
-To learn more about Next.js, take a look at the following resources:
+- `components.json` - Shadcn UI components configuration
+- `next.config.mjs` - Next.js configuration
+- `postcss.config.mjs` - PostCSS configuration
+- `posthog.js` - PostHog analytics setup
+- `jsconfig.json` - JavaScript configuration and path aliases
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This portfolio is deployed on Vercel. You can deploy your own version using the button below:
 
-## Deploy on Vercel
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/rithb898/Rith_Portfolio_NextJS)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - feel free to use this project as a template for your own portfolio!
+
+## Contact
+
+- GitHub: [@rithb898](https://github.com/rithb898)
+- LinkedIn: [Rith Banerjee](https://linkedin.com/in/rith-banerjee)
