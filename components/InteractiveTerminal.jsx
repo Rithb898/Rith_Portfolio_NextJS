@@ -102,8 +102,12 @@ function InteractiveTerminal() {
     },
   ]);
 
+  // Check viewport width on mount
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const inputRef = useRef(null);
