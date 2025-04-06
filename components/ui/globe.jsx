@@ -1,7 +1,24 @@
 import IconCloud from "./icon-cloud";
 
-
 const slugs = [
+  "javascript",
+  "python",
+  "react",
+  "nextdotjs",
+  "css3",
+  "html5",
+  "tailwindcss",
+  "nodedotjs",
+  "express",
+  "amazonaws",
+  "linux",
+  "git",
+  "vercel",
+  "netlify",
+  "appwrite",
+  "supabase",
+  "figma",
+  "framer-motion",
   "typescript",
   "javascript",
   "dart",
@@ -33,7 +50,6 @@ const slugs = [
   "sonarqube",
   "figma",
 ];
-
 
 function IconCloudDemo() {
   return (

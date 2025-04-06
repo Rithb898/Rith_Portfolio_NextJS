@@ -38,8 +38,18 @@ function Navbar() {
   const navLinks = [
     { id: "#", icon: FaHome, text: "Home", path: "#" },
     { id: "#skills", icon: FaCode, text: "Skills", path: "#skills" },
-    { id: "#education", icon: FaGraduationCap, text: "Education", path: "#education" },
-    { id: "#projects", icon: FaLaptopCode, text: "Projects", path: "#projects" },
+    {
+      id: "#education",
+      icon: FaGraduationCap,
+      text: "Education",
+      path: "#education",
+    },
+    {
+      id: "#projects",
+      icon: FaLaptopCode,
+      text: "Projects",
+      path: "#projects",
+    },
     { id: "#contact", icon: FaEnvelope, text: "Contact", path: "#contact" },
   ];
 
@@ -48,7 +58,6 @@ function Navbar() {
       <div className="md:fixed md:top-4 md:left-1/2 md:transform md:-translate-x-1/2 w-full md:w-auto">
         <div className="p-[2px] md:rounded-full bg-gradient-to-r from-emerald-400 via-cyan-500 to-indigo-500 animate-gradient-x">
           <nav className="bg-gray-900/90 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5">
-            
             {/* Mobile Menu Button */}
             <div className="flex justify-between items-center md:hidden px-2">
               <Link href="/" className="text-xl font-bold text-white">
@@ -79,13 +88,14 @@ function Navbar() {
                         ${activeLink === id ? "bg-white/15 text-white" : "text-gray-300 hover:text-white"}
                       `}
                   >
-                    <Icon className={`text-base ${activeLink === id ? "scale-110" : ""}`} />
+                    <Icon
+                      className={`text-base ${activeLink === id ? "scale-110" : ""}`}
+                    />
                     <span className="inline">{text}</span>
                   </Link>
                 ))}
               </div>
             </div>
-
           </nav>
         </div>
       </div>

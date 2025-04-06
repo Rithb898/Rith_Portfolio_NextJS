@@ -1,21 +1,21 @@
-import Contact from '@/components/Contact'
-import EducationSection from '@/components/EducationSection'
-import Hero from '@/components/Hero'
-import Projects from '@/components/Projects'
-import SkillsSection from '@/components/SkillsSection'
-import React from 'react'
+import ContactSection from "@/sections/ContactSection";
+import EducationSection from "@/sections/EducationSection";
+import HeroSection from "@/sections/HeroSection";
+import ProjectSection from "@/sections/ProjectSection";
+import SkillsSection from "@/sections/SkillsSection";
+import React from "react";
 
 function page() {
   return (
     <>
-
-      <Hero />
+      <HeroSection />
+      {/* <AboutSection /> */}
       <SkillsSection />
       <EducationSection />
-      <Projects />
-      <Contact />
+      <ProjectSection />
+      <ContactSection />
     </>
-  )
+  );
 }
 
-export default page
+export default page;

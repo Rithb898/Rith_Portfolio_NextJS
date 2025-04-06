@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Rith's Portfolio",
-  description: "",
+  description: "Rith Banerjee's Portfolio",
 };
 
 export default function RootLayout({ children }) {
@@ -19,15 +19,13 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          type='text/css'
+          type="text/css"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         />
       </head>
-      <body className={`${montserrat.variable} font-montserrat antialiased`}>
+      <body className={`${montserrat.variable} font-montserrat antialiased `}>
         <Navbar />
-        <PostHogProvider>
-          {children}
-        </PostHogProvider>
+        <PostHogProvider>{children}</PostHogProvider>
       </body>
     </html>
   );

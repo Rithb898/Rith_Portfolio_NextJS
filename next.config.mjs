@@ -1,5 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        hostname: "api.microlink.io",
+        pathname: "/**",
+      },
+    ],
+    // domains: [
+    //   "api.microlink.io", // Microlink Image Preview
+    // ],
+  },
   async rewrites() {
     return [
       {

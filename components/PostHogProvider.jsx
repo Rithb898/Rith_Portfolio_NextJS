@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import posthog from "posthog-js";
 import { PostHogProvider as PHProvider, usePostHog } from "posthog-js/react";
@@ -35,7 +35,7 @@ function PostHogPageView() {
       if (search) {
         url += "?" + search;
       }
-      posthog.capture("$pageview", { "$current_url": url });
+      posthog.capture("$pageview", { $current_url: url });
     }
   }, [pathname, searchParams, posthog]);
 

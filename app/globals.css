@@ -143,14 +143,13 @@
   }
 
   .typing-effect::after {
-    content: '|';
+    content: "|";
     animation: blink 1s step-end infinite;
     margin-left: 2px;
     color: #60a5fa;
   }
 
   @keyframes blink {
-
     from,
     to {
       opacity: 1;
@@ -160,24 +159,6 @@
       opacity: 0;
     }
   }
-}
-
-@theme {
-  --animation-meteor: meteor 5s linear infinite;
-
-  --keyframes-meteor: (0% {
-      transform: rotate(var(--angle)) translateX(0);
-      opacity: 1;
-    }
-
-    70% {
-      opacity: 1;
-    }
-
-    100% {
-      transform: rotate(var(--angle)) translateX(-500px);
-      opacity: 0;
-    });
 }
 
 @theme inline {
