@@ -47,6 +47,7 @@ export default function ProjectSection() {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    loading='lazy'
                     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 group-hover:brightness-90"
                   />
                   <div className="absolute inset-0 bg-linear-to-r from-transparent to-[#0a1428]/50 opacity-70 group-hover:opacity-80"></div>

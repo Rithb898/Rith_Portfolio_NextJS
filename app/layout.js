@@ -16,13 +16,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
-      <head>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        />
-      </head>
       <body className={`${montserrat.variable} font-montserrat antialiased `}>
         <Navbar />
         <PostHogProvider>{children}</PostHogProvider>
