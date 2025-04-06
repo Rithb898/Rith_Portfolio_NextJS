@@ -91,7 +91,6 @@ const AnimatedSpan = ({ children, delay = 0, className, ...props }) => (
 );
 
 function InteractiveTerminal() {
-  const [isMobile, setIsMobile] = useState(false);
   const [command, setCommand] = useState("");
   const [history, setHistory] = useState([
     { type: "system", text: "> npm install rith-portfolio" },
@@ -102,13 +101,6 @@ function InteractiveTerminal() {
     },
   ]);
 
-  // Check viewport width on mount
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    handleResize(); // initial check
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
 
   const handleCommand = (e) => {
@@ -172,7 +164,7 @@ function InteractiveTerminal() {
             onChange={(e) => setCommand(e.target.value)}
             onKeyDown={handleCommand}
             className="bg-transparent outline-none w-full"
-            autoFocus={!isMobile}
+            // autoFocus={isMobile}
             placeholder="Type a command..."
           />
         </div>
