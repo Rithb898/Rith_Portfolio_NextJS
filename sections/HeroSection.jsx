@@ -9,27 +9,38 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { HeroWords } from "@/constant/constant";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
 function HeroSection() {
   const confettiRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check viewport width on mount
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    handleResize(); // initial check
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <main className="pt-20 lg:pt-[0rem] bg-[#020617] text-white min-h-screen">
-      <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
+    <main className="pt-20 lg:pt-[0rem] bg-[#020617] text-white min-h-screen overflow-hidden">
+      <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8 overflow-hidden">
         <GridBackground />
 
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <Meteors number={30} />
         </div>
 
-        {/* Confetti Effect */}
-        <Confetti
-          ref={confettiRef}
-          className="absolute left-0 top-0 z-0 size-full pointer-events-none"
-        />
+        {/* Conditionally render confetti if not on mobile */}
+        {!isMobile && (
+          <Confetti
+            ref={confettiRef}
+            className="absolute left-0 top-0 z-0 size-full pointer-events-none"
+          />
+        )}
 
         {/* Main Content Container */}
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between relative z-10 py-12 lg:py-0">

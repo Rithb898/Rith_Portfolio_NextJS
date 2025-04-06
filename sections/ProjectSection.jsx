@@ -28,7 +28,7 @@ export default function ProjectSection() {
           heading="Projects"
           subheading="Explore my creative journey through code and design"
         />
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-8 max-w-full overflow-hidden">
           {projects.map((project, index) => (
             <motion.div
               key={index}

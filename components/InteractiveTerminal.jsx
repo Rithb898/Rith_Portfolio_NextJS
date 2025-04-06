@@ -97,7 +97,7 @@ function InteractiveTerminal() {
     { type: "response", text: "✔ Successfully installed!" },
     {
       type: "system",
-      text: "> Available commands: help, projects, contact, about, clear",
+      text: `> Available commands:\n- help\n- projects\n- contact\n- about\n- clear`,
     },
   ]);
 
@@ -133,7 +133,7 @@ function InteractiveTerminal() {
   return (
     <div
       className={cn(
-        "z-0 h-full max-h-[600px] w-full max-w-lvh rounded-xl border border-border bg-background",
+        "z-0 h-full max-h-[600px] w-full max-w-md md:max-w-4xl rounded-xl border border-border bg-background",
       )}
     >
       <div className="flex flex-col gap-y-2 border-b border-border p-4">
@@ -147,7 +147,7 @@ function InteractiveTerminal() {
         {history.map((item, idx) => (
           <div
             key={idx}
-            className={cn("md:text-lg", {
+            className={cn("text-sm md:text-xl w-screen", {
               "text-white": item.type === "system" || item.type === "input",
               "text-green-400": item.type === "response",
               "text-red-400": item.type === "error",
