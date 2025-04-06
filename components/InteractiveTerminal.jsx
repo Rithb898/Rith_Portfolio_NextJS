@@ -110,7 +110,6 @@ function InteractiveTerminal() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const inputRef = useRef(null);
 
   const handleCommand = (e) => {
     if (e.key === "Enter") {
@@ -169,7 +168,6 @@ function InteractiveTerminal() {
           &gt;
           <input
             type="text"
-            ref={inputRef}
             value={command}
             onChange={(e) => setCommand(e.target.value)}
             onKeyDown={handleCommand}
