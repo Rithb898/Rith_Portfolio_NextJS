@@ -91,6 +91,7 @@ const AnimatedSpan = ({ children, delay = 0, className, ...props }) => (
 );
 
 function InteractiveTerminal() {
+  const [isMobile, setIsMobile] = useState(false);
   const [command, setCommand] = useState("");
   const [history, setHistory] = useState([
     { type: "system", text: "> npm install rith-portfolio" },
@@ -100,6 +101,10 @@ function InteractiveTerminal() {
       text: `> Available commands:\n- help\n- projects\n- contact\n- about\n- clear`,
     },
   ]);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+  }, []);
 
   const inputRef = useRef(null);
 
@@ -165,7 +170,7 @@ function InteractiveTerminal() {
             onChange={(e) => setCommand(e.target.value)}
             onKeyDown={handleCommand}
             className="bg-transparent outline-none w-full"
-            autoFocus
+            autoFocus={!isMobile}
             placeholder="Type a command..."
           />
         </div>
