@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark">
       <head>
         <meta property="og:image" content="/website-preview.png" />
+        <meta name="twitter:card" content="/website-preview.png" />
       </head>
       <body className={`${montserrat.variable} font-montserrat antialiased `}>
         <Navbar />
