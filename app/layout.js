@@ -20,6 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta property="og:image" content="/website-preview.png" />
+      </head>
       <body className={`${montserrat.variable} font-montserrat antialiased `}>
         <Navbar />
         <PostHogProvider>{children}</PostHogProvider>
