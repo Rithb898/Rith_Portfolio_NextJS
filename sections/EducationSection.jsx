@@ -34,21 +34,21 @@ const EducationSection = () => {
 
   return (
     <section
-      className="min-h-screen relative overflow-hidden py-40 bg-[#04081A]"
-      id="education"
+      className='min-h-screen relative overflow-hidden py-32 bg-[#04081A]'
+      id='education'
     >
       <ModernGridPattern />
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
+      <div className='max-w-6xl mx-auto px-4 relative z-10'>
         <SectionHeader
-          heading="Educational Journey"
-          subheading="A journey through academia that built a foundation for problem-solving and professional growth."
+          heading='Educational Journey'
+          subheading='A journey through academia that built a foundation for problem-solving and professional growth.'
         />
 
         <motion.div
           variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          initial='hidden'
+          animate='visible'
+          className='grid grid-cols-1 md:grid-cols-2 gap-8'
         >
           {educationData.map((edu, index) => (
             <motion.div
@@ -62,51 +62,51 @@ const EducationSection = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="space-y-6">
-                <div className="space-y-2">
-                  <div className="flex items-center gap-3">
-                    <span className="text-3xl">{edu.mascot}</span>
-                    <h3 className="text-2xl font-bold text-white">
+              <div className='space-y-6'>
+                <div className='space-y-2'>
+                  <div className='flex items-center gap-3'>
+                    <span className='text-3xl'>{edu.mascot}</span>
+                    <h3 className='text-2xl font-bold text-white'>
                       {edu.degree}
                     </h3>
                   </div>
-                  <p className="text-lg text-gray-300 flex items-center gap-2">
-                    <BookOpen className="w-5 h-5 text-teal-500" />
+                  <p className='text-lg text-gray-300 flex items-center gap-2'>
+                    <BookOpen className='w-5 h-5 text-teal-500' />
                     {edu.school}
                   </p>
-                  <p className="text-gray-400 flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
+                  <p className='text-gray-400 flex items-center gap-2'>
+                    <Calendar className='w-4 h-4' />
                     {edu.year}
                   </p>
                 </div>
 
-                <p className="text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3">
+                <p className='text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3'>
                   {edu.description}
                 </p>
 
-                <div className="space-y-3">
-                  <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-                    <Trophy className="w-4 h-4 text-yellow-500" />
+                <div className='space-y-3'>
+                  <h4 className='text-sm font-semibold text-white flex items-center gap-2'>
+                    <Trophy className='w-4 h-4 text-yellow-500' />
                     Key Achievements
                   </h4>
-                  <div className="flex flex-wrap gap-2">
+                  <div className='flex flex-wrap gap-2'>
                     {edu.achievements.map((achievement, i) => (
                       <div
                         key={i}
-                        className="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 flex items-center gap-2 text-sm"
+                        className='px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 flex items-center gap-2 text-sm'
                       >
-                        <Award className="w-4 h-4" />
+                        <Award className='w-4 h-4' />
                         <span>{achievement}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className='flex flex-wrap gap-2'>
                   {edu.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300"
+                      className='px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300'
                     >
                       {skill}
                     </span>

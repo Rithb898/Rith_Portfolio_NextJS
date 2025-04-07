@@ -52,9 +52,9 @@ function HeroSection() {
 
             {/* Welcome badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-xs border border-gray-700/50 mb-6 sm:mb-8 animate__animated animate__fadeInDown animate__delay-1s">
-              <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
-              <span className="text-gray-300 text-xs sm:text-sm font-medium">
-                Welcome to my Portfolio
+              <div className="w-3 h-3 rounded-full bg-blue-400 animate-pulse"></div>
+              <span className="text-gray-300 text-sm sm:text-base font-medium">
+                Open For Work
               </span>
             </div>
 
