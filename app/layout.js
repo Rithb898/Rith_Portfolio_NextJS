@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="/website-preview.png" />
         <meta name="twitter:card" content="/website-preview.png" />
       </head>
-      <body className={`${montserrat.variable} font-montserrat antialiased `}>
+      <body className={`${montserrat.variable} font-montserrat`}>
         <Navbar />
         <PostHogProvider>{children}</PostHogProvider>
         <Footer />
