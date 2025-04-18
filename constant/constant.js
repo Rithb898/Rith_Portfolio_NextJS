@@ -35,6 +35,7 @@ import postman from "@/public/postman-original.svg";
 import vscode from "@/public/vscode-original.svg";
 import jetbrains from "@/public/jetbrains-original.svg";
 
+import FitForJob from "@/public/FitForJob.png";
 import CryptoTracker from "@/public/CryptoTracker.png";
 import GenStrongPass from "@/public/GenStrongPass.png";
 import FocusOnToday from "@/public/FocusOnToday.png";
@@ -204,6 +205,33 @@ export const educationData = [
 
 export const projects = [
   {
+    title: "FitForJob - AI Application Assistant",
+    description:
+      "An AI-powered web app that helps job seekers generate personalized job application materials. Users can upload resumes, input job and company info, and generate responses like cover letters, value propositions, LinkedIn messages, and interview prep Qs. Built with Next.js 15, Tailwind CSS 4, Groq (LLaMA 3.3 and Deepsheek), Clerk, and MongoDB. Includes response history management, validation, toast notifications, and usage analytics.",
+    tags: [
+      "Next.js 15",
+      "Tailwind CSS 4",
+      "Groq API",
+      "LLaMA 3.3",
+      "Deepsheek",
+      "pdf-parse",
+      "Clerk",
+      "React Hook Form",
+      "Zod",
+      "MongoDB",
+      "Shadcn UI",
+      "PostHog",
+      "Motion"
+    ],
+    category: "Fullstack",
+    links: {
+      github: "https://github.com/Rithb898/FitForJob-AI-Application-Assistant/", // replace with your actual repo
+      demo: "https://fitforjob.vercel.app/", // replace with your actual live URL
+    },
+    image: FitForJob, // make sure you import or add an image reference
+    featured: true,
+  },
+  {
     title: "CryptoTracker",
     description:
       "A real-time cryptocurrency tracking platform built with React and the CoinGecko API. Features include dark/light mode, a responsive UI with Tailwind CSS, favorites/watchlist management, and interactive coin detail pages with chart visualizations. Context API is used for efficient global state handling and smoother user interactions.",
@@ -214,7 +242,7 @@ export const projects = [
       demo: "https://cryptotrackerrith.netlify.app/",
     },
     image: CryptoTracker,
-    featured: true,
+    featured: false,
   },
   {
     title: "GenStrongPass",

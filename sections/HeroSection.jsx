@@ -100,7 +100,6 @@ function HeroSection() {
               {/* View Projects Button */}
               <Link
                 href="#projects"
-                target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-blue-500 to-teal-400 p-[1px] transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
               >
@@ -112,7 +111,7 @@ function HeroSection() {
 
               {/* Get Resume Button */}
               <Link
-                href="https://drive.google.com/file/d/103iP18P4JW5u9pat_MvAsqWUDtGNIhS8/view?usp=sharing"
+                href="https://drive.google.com/file/d/1yo0sNILfUVpxDnOjXLE6bCossAMZTbCL/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 p-[1px] transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
